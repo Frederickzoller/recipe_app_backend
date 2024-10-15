@@ -1,0 +1,54 @@
+{
+    "info": {
+      "name": "The OG Recipes API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "_postman_id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9"
+    },
+    "item": [
+      {
+        "name": "Recipes",
+        "item": [
+          {
+            "name": "Get All Recipes",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/recipes",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recipes"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Create New Recipe",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"title\": \"Sample Recipe\",\n  \"description\": \"This is a sample recipe.\",\n  \"ingredients\": [\"Ingredient 1\", \"Ingredient 2\"],\n  \"steps\": [\"Step 1\", \"Step 2\"],\n  \"author_id\": 1\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/recipes",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recipes"]
+              }
+            },
+            "response": []
+          }
+        ]
+      }
+    ]
+  }
