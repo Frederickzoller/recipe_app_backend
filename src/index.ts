@@ -35,7 +35,7 @@ app.get('/recipes', getAllRecipes);
 app.post('/recipes', createNewRecipe);
 
 // Start the Fastify server
-app.listen({ port: 3000 }, (err, address) => {
+app.listen({ port: 3001 }, (err, address) => {
   if (err) {
     app.log.error(err);
     process.exit(1);
