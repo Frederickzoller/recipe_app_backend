@@ -10,7 +10,8 @@ def create_recipe(recipe_data: dict) -> Recipe:
         description=recipe_data.get("description", ""),
         ingredients=recipe_data.get("ingredients", []),
         steps=recipe_data.get("steps", []),
-        author_id=recipe_data.get("author_id")
+        # Remove the following line
+        # author_id=recipe_data.get("author_id")
     )
     add_recipe(new_recipe)
     return new_recipe

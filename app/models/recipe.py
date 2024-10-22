@@ -7,4 +7,3 @@ class Recipe(BaseModel):
     description: str
     ingredients: List[str]
     steps: List[str]
-    author_id: Optional[int] = None
