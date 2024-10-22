@@ -15,7 +15,7 @@ initialize_storage()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update this in production for security
+    allow_origins=["https://recipe-refactored-2-fronted.vercel.app"],  # Update this with your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
